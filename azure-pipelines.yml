@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
   demands: limit -equals disableparallel
 
+strategy:
+  maxParallel: 1
+
 steps:
 - task: NodeTool@0
   inputs:
